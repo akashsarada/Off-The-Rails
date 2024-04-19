@@ -5,8 +5,10 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using TMPro;
 
-public class ToMainMenu : MonoBehaviour
+public class ChangeScene : MonoBehaviour
 {
+	public int scene;
+	
     // Start is called before the first frame update
     void Start()
     {
@@ -21,6 +23,6 @@ public class ToMainMenu : MonoBehaviour
 	
 	public void ButtonPressed()
 	{
-		SceneManager.LoadScene(0);
+		SceneManager.LoadScene(scene);
 	}
 }

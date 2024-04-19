@@ -20,13 +20,13 @@ public class DepartureBoard : MonoBehaviour
 	{
 		Debug.Log(":)");
 		
-		transform.position += Vector3.up * 6;
+		transform.LeanMoveLocal(new Vector2(175, 200), 1).setEaseOutCubic();
 	}
 	
 	void OnMouseExit()
 	{
 		Debug.Log(":(");
 		
-		transform.position += Vector3.down * 6;
+		transform.LeanMoveLocal(new Vector2(175, -150), 1).setEaseOutCubic();
 	}
 }

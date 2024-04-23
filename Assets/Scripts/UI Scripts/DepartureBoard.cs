@@ -7,7 +7,6 @@ public class DepartureBoard : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        transform.SetPosition(new Vector2(Screen.width / -2, 0));
     }
 
     // Update is called once per frame
@@ -20,13 +19,13 @@ public class DepartureBoard : MonoBehaviour
 	{
 		Debug.Log(":)");
 		
-		transform.LeanMoveLocal(new Vector2(175, 200), 1).setEaseOutCubic();
+		transform.LeanMoveLocal(new Vector2(-Screen.width / 2 + 175, -Screen.height / 2 + 200), 1).setEaseOutCubic();
 	}
 	
 	void OnMouseExit()
 	{
 		Debug.Log(":(");
 		
-		transform.LeanMoveLocal(new Vector2(175, -150), 1).setEaseOutCubic();
+		transform.LeanMoveLocal(new Vector2(-Screen.width / 2 + 175, -Screen.height / 2 - 150), 1).setEaseOutCubic();
 	}
 }

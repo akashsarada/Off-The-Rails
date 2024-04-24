@@ -18,11 +18,11 @@ public class DepartureBoard : MonoBehaviour
 	
 	void OnMouseEnter()
 	{
-		transform.LeanMoveLocal(new Vector2(-Screen.width / 2 + 175, -Screen.height / 2 + 200), 1).setEaseOutCubic();
+		transform.LeanMoveLocal(new Vector2(-Screen.width / 2 + 175, -Screen.height / 2 + 200), 0.5f).setEaseOutCubic();
 	}
 	
 	void OnMouseExit()
 	{
-		transform.LeanMoveLocal(new Vector2(-Screen.width / 2 + 175, -Screen.height / 2 - 150), 1).setEaseOutCubic();
+		transform.LeanMoveLocal(new Vector2(-Screen.width / 2 + 175, -Screen.height / 2 - 150), 0.5f).setEaseOutCubic();
 	}
 }

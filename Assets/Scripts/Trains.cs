@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Trains : MonoBehaviour
 {
-	public int maxPassengers;
+	public int maxPassengers = 5;
 	public int currentPassengers;
 	public bool board = false;
 	public AutoMovement autoMovement;
@@ -20,10 +20,13 @@ public class Trains : MonoBehaviour
 	void boardTrain() {
 		Debug.Log("Board");
 		board = false;
-		for (int i = currentPassengers; i <= maxPassengers; i++) {
-			currentPassengers++;
-			playerMove.boardTrain();
-		}
-		autoMovement.stopMove();
+		playerMove.boardTrain();
+		//for (int i = currentPassengers; i <= maxPassengers; i++) {
+		//	Debug.Log("Boarding");
+		//	currentPassengers++;
+		//	playerMove.boardTrain();
+		//}
+		//autoMovement.stopMove();
 	}
+	
 }

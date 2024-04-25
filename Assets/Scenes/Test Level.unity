@@ -367,8 +367,8 @@ MonoBehaviour:
   maxPassengers: 10
   currentPassengers: 0
   board: 0
-  autoMovement: {fileID: 7870666251426752889, guid: 8ffe79b25d8ca37439ae1c9eb6149be9, type: 3}
-  playerMove: {fileID: 2366969617542673850, guid: 8ffe79b25d8ca37439ae1c9eb6149be9, type: 3}
+  autoMovement: {fileID: 1553251651}
+  playerMove: {fileID: 1553251652}
 --- !u!1 &434648992
 GameObject:
   m_ObjectHideFlags: 0
@@ -950,6 +950,28 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1356373997}
   m_SourcePrefab: {fileID: 100100000, guid: 8ffe79b25d8ca37439ae1c9eb6149be9, type: 3}
+--- !u!114 &1553251651 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7870666251426752889, guid: 8ffe79b25d8ca37439ae1c9eb6149be9, type: 3}
+  m_PrefabInstance: {fileID: 1185737675641663321}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36bda0884a26e884bba38e8d4c195c49, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1553251652 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2366969617542673850, guid: 8ffe79b25d8ca37439ae1c9eb6149be9, type: 3}
+  m_PrefabInstance: {fileID: 1185737675641663321}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3db477cd90c11649a13c8117fa92343, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1719901348
 GameObject:
   m_ObjectHideFlags: 0

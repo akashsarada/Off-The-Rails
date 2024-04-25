@@ -20,7 +20,9 @@ public class Trains : MonoBehaviour
 	void boardTrain() {
 		Debug.Log("Board");
 		board = false;
-		playerMove.boardTrain();
+		autoMovement.targetX = -5;
+		GameObject.FindGameObjectsWithTag("Circle")[0].GetComponent<AutoMovement>().targetX = -7;
+		//autoMovement.targetX = -5;
 		//for (int i = currentPassengers; i <= maxPassengers; i++) {
 		//	Debug.Log("Boarding");
 		//	currentPassengers++;

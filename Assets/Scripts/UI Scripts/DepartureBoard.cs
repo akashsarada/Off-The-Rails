@@ -21,15 +21,19 @@ public class DepartureBoard : MonoBehaviour
 	
 	void OnMouseEnter()
 	{
+		// moves board up
 		transform.LeanMoveLocal(new Vector2(-Screen.width / 2 + 175, -Screen.height / 2 + 200), 0.5f).setEaseOutCubic();
-        src.clip = clip1;
+        // plays sound
+		src.clip = clip1;
         src.Play();
 	}
 	
 	void OnMouseExit()
 	{
+		// moves board down
 		transform.LeanMoveLocal(new Vector2(-Screen.width / 2 + 175, -Screen.height / 2 - 150), 0.5f).setEaseOutCubic();
-        src.clip = clip2;
+        // plays sound
+		src.clip = clip2;
         src.Play();
 	}
 }

@@ -8,6 +8,10 @@ public class Creation : MonoBehaviour
 	
 	public bool creation = false;
 	
+	void Start() {
+		autoMovement.targetX = -5;
+	}
+	
     void Update()
     {
 		if (creation) {
@@ -19,9 +23,10 @@ public class Creation : MonoBehaviour
 	void spawn() {
 		creation = false;
 		int count = GameObject.FindGameObjectsWithTag("Circle").Length - 1;
-		
-		autoMovement.targetX = autoMovement.targetX + count;
+		Debug.Log(GameObject.FindGameObjectsWithTag("Circle").Length);
 		Instantiate(circlePrefab, new Vector2(6,-4), transform.rotation);
-		autoMovement.targetX = autoMovement.targetX - count;
+		Debug.Log(GameObject.FindGameObjectsWithTag("Circle").Length);
+		GameObject.FindGameObjectsWithTag("Circle")[count + 1].GetComponent<AutoMovement>().targetX = GameObject.FindGameObjectsWithTag("Circle")[count].GetComponent<AutoMovement>().targetX + 1;;
 	}
+		
 }

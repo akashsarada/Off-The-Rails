@@ -8,6 +8,9 @@ public class AutoMovement : MonoBehaviour
 	public float targetX;
 	public float targetY;
 	
+	void Start() {
+		targetX = -5;
+	}
     // Update is called once per frame
     void Update()
     {
@@ -47,5 +50,13 @@ public class AutoMovement : MonoBehaviour
 		targetX = transform.position.x;
 		targetY = transform.position.y;
 	}
+	
+	public bool finished() {
+		if ((playerMove.vertical == 0) && (playerMove.horizontal == 0)) {
+			return true;
+		}
+		return false;
+	}
+	
 		
 }

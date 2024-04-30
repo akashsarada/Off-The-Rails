@@ -9,7 +9,7 @@ public class AutoMovement : MonoBehaviour
 	public float targetY;
 	
 	void Start() {
-		targetX = -5;
+		
 	}
     // Update is called once per frame
     void Update()

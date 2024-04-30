@@ -26,7 +26,7 @@ public class Trains : MonoBehaviour
 			goa[i].GetComponent<AutoMovement>().targetX = -7;
 			count++;
 		}
-		//while (!goa[count].GetComponent<AutoMovement>().finished) {}
+		while (!goa[count].GetComponent<AutoMovement>().finished()) {}
 		Debug.Log(goa.Length);
 		Debug.Log(count);
 	}

@@ -18,11 +18,11 @@ public class Station : MonoBehaviour
 	
 	void OnMouseEnter()
 	{
-		transform.LeanScale(Vector2(1.25, 1.25), 0.5f);
+		transform.LeanScale(new Vector2(1.25, 1.25), 0.5f);
 	}
 	
 	void OnMouseExit()
 	{
-		transform.LeanScale(Vector2(1, 1), 0.5f);
+		transform.LeanScale(new Vector2(1, 1), 0.5f);
 	}
 }

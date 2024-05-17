@@ -23,6 +23,15 @@ public class ChangeScene : MonoBehaviour
 	
 	public void ButtonPressed()
 	{
+        GameObject obj = GameObject.Find("Audio Source");
+        if (obj == null)
+        {
+            obj = new GameObject("Audio Source", typeof(AudioSource));
+        }
+        DontDestroyOnLoad(obj);
+        AudioSource source = obj.AddComponent<AudioSource>();
+        source.PlayOneShot(Resources.Load<AudioClip>("shutter"));
+
 		SceneManager.LoadScene(scene);
 	}
 }

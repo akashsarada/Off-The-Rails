@@ -414,9 +414,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 612c2eeac235ed046956b12c8ea2e59f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  src: {fileID: 1122508876}
-  clip1: {fileID: 8300000, guid: b21a8818e0474ee458d2c4bbcdb3a16f, type: 3}
-  clip2: {fileID: 8300000, guid: cdde1cd0c10758441b68200616b7a5ea, type: 3}
+  source: {fileID: 1122508876}
+  open: {fileID: 8300000, guid: b21a8818e0474ee458d2c4bbcdb3a16f, type: 3}
+  close: {fileID: 8300000, guid: cdde1cd0c10758441b68200616b7a5ea, type: 3}
 --- !u!61 &1122508874
 BoxCollider2D:
   m_ObjectHideFlags: 0

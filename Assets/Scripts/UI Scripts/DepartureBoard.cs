@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class DepartureBoard : MonoBehaviour
 {
-    public AudioSource src;
-    public AudioClip clip1, clip2;
+    public AudioSource source;
+    public AudioClip open, close;
 
     // Start is called before the first frame update
     void Start()
@@ -24,8 +24,8 @@ public class DepartureBoard : MonoBehaviour
 		// moves board up
 		transform.LeanMoveLocal(new Vector2(-Screen.width / 2 + 175, -Screen.height / 2 + 200), 0.5f).setEaseOutCubic();
         // plays sound
-		src.clip = clip1;
-        src.Play();
+		source.clip = open;
+        source.Play();
 	}
 	
 	void OnMouseExit()
@@ -33,7 +33,7 @@ public class DepartureBoard : MonoBehaviour
 		// moves board down
 		transform.LeanMoveLocal(new Vector2(-Screen.width / 2 + 175, -Screen.height / 2 - 150), 0.5f).setEaseOutCubic();
         // plays sound
-		src.clip = clip2;
-        src.Play();
+		source.clip = close;
+        source.Play();
 	}
 }

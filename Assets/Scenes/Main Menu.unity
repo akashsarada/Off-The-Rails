@@ -696,7 +696,6 @@ GameObject:
   - component: {fileID: 506084866}
   - component: {fileID: 506084865}
   - component: {fileID: 506084864}
-  - component: {fileID: 506084863}
   - component: {fileID: 506084867}
   m_Layer: 5
   m_Name: UI Test Button
@@ -725,18 +724,6 @@ RectTransform:
   m_AnchoredPosition: {x: 300, y: -145}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &506084863
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 506084861}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8d50d5d26e92691478baa1c6aaec4c0c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &506084864
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1127,7 +1114,6 @@ GameObject:
   - component: {fileID: 981857942}
   - component: {fileID: 981857941}
   - component: {fileID: 981857940}
-  - component: {fileID: 981857939}
   - component: {fileID: 981857943}
   m_Layer: 5
   m_Name: Test Level Button
@@ -1156,18 +1142,6 @@ RectTransform:
   m_AnchoredPosition: {x: 300, y: -87}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &981857939
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 981857937}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8d50d5d26e92691478baa1c6aaec4c0c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &981857940
 MonoBehaviour:
   m_ObjectHideFlags: 0
